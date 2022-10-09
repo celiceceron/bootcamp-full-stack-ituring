@@ -9,7 +9,7 @@ let numero8 = 8
 let numero9 = 9
 let numero10 = 10
 
-console.log(numero1 * 123)
+console.log(numero1 *123)
 console.log (numero2 *123)
 console.log (numero3 *123)
 console.log (numero4 *123)
