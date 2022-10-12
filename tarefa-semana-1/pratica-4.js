@@ -1,6 +1,6 @@
-let milhasTerraELua = 238900
-let valorQuilometro = (1,609)
+const milhasParaKm = 1.60934;
+const distanciaTerraLuaEmMilhas = 238900;
+const distanciaTerraLuaEmKm = distanciaTerraLuaEmMilhas*milhasParaKm;
 
-console.log(milhasTerraELua * valorQuilometro)
-
+console.log(distanciaTerraLuaEmKm);
 
