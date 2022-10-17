@@ -13,10 +13,3 @@ vermelha"->"rgb(255,0,0)"
 
 */
 
-function definicaoDeCores (cor) {
-    switch (definicaoDeCores) {
-      case 1:  cor = vermelha
-        console.log(`vermelha"->"rgb(255,0,0)`);
-    }
-}
-definicaoDeCores(vermelha);
