@@ -8,7 +8,7 @@ qualquer um dos números.
 */
 
 const maiorNumero = (num1, num2, num3) => {
-    if(num1 > num2, num3){
+    if(num1 > num2 && num3){
         console.log(num1);
     } else{
         console.log(num1||num2||num3);
