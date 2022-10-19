@@ -5,10 +5,23 @@
  IMC = PESO / (ALTURA * ALTURA).
  */
 
- const calculoDoIMC = (peso, altura) => {
-    const imc = (peso/(altura * altura));
-    const imcFinal = Math.floor(imc);
-        return imcFinal
- }
+ const calculoImc = (peso, altura) => peso / (altura * altura);
 
- console.log(calculoDoIMC(77, 1.72));
+ function classificacaoImc (imc) {
+    if (imc < 18.5)
+        return "Abaixo do Peso"
+    if (imc < 25)
+        return "Peso Normal"
+    if (imc < 30)
+        return "Sobrepeso"
+    
+        return "Obesidade"
+ }
+ 
+ function checagemImc (peso, altura) {
+    const imc = calculoImc (peso, altura);
+    console.log(classificacaoImc(imc));
+ }
+    
+
+checagemImc(30, 1.7);
