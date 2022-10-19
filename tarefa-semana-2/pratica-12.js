@@ -17,25 +17,25 @@ siga a regra a seguir para apresentar o retorno:
 const numerosDaSemana = (num) => {
     switch (num) {
         case 01:
-            console.log(`Segunda`);
+            return "Segunda";
             break; 
         case 02:
-            console.log(`Terça`);
+            return "Terça";
             break;
         case 03:
-            console.log(`Quarta`);
+            return "Quarta";
             break;
         case 04:
-            console.log(`Quinta`);
+            return "Quinta";
             break;
         case 05:
-            console.log(`Sexta`);
+            return "Sexta";
             break;
         case 06:
-            console.log(`Sábado`);
+            return "Sábado";
             break;
         case 07:
-            console.log(`Domingo`);
+            return "Domingo";
             break;
         default:
             console.log(`O número ${num} não é válido`);
