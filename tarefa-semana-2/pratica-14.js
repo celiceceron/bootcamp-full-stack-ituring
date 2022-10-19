@@ -5,7 +5,7 @@ retorne a classificação do IMC de acordo
 com o seguinte cálculo: IMC = PESO / (ALTURA * ALTURA).
 */
 
-/*
+
 const enquandramento = (peso, altura) => {
     const imc = (peso/(altura * altura));
 
@@ -21,8 +21,11 @@ const enquandramento = (peso, altura) => {
 
 }
 console.log(enquandramento(40, 1.70));
-*/
+console.log(enquandramento(65, 1.70));
+console.log(enquandramento(90, 1.70));
+console.log(enquandramento(120, 1.70));
 
+/*
 const parametroDoIMC = (imc) => {
     if (imc < 18.5){
         console.log(`"Abaixo do Peso" -> IMC abaixo de 18.5`);
@@ -39,3 +42,4 @@ console.log(parametroDoIMC(17));
 console.log(parametroDoIMC(23));
 console.log(parametroDoIMC(28));
 console.log(parametroDoIMC(38));
+*/
