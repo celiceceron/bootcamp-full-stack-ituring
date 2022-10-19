@@ -7,12 +7,16 @@ Já passando 3 números iguais, você pode exibir
 qualquer um dos números.
 */
 
-const maiorNumero = (num1, num2, num3) => {
-    if(num1 > num2 && num3){
-        console.log(num1);
-    } else{
-        console.log(num1||num2||num3);
-    }
-}
 
-console.log(maiorNumero(30, 30, 30));
+const maiorNumero = (num1, num2, num3) => {
+    if(num1 > num2 && num1 > num3)
+        console.log(num1);
+    if (num2 > num3)
+        console.log(num2);
+    else
+        console.log(num3);
+    }
+
+maiorNumero(40, 30, 10);
+maiorNumero(70, 80, 90);
+maiorNumero(40, 40, 40);
