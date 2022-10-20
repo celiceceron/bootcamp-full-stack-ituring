@@ -20,4 +20,4 @@ const exibaNumerosImpares = (n) => {
    }
 }
 
-exibaNumerosImpares(19)
+exibaNumerosImpares(17)
