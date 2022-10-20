@@ -8,11 +8,23 @@ for primo e false se ele não for um número primo.
 const eHPrimo = (n) => {
     let i = 1
 
-    if (i == 1){      
+    if (n % i === 0){
+        return "True"
     }
+        return "False"
+
     while (i <= n) {
-        i++;
+        console.log(i);
+         i++
     }
 }
 
-console.log(eHPrimo())
+
+eHPrimo(17);
+eHPrimo(2);
+eHPrimo(7);
+eHPrimo(8);
+eHPrimo(5);
+eHPrimo(23);
+eHPrimo(15);
+eHPrimo(1500450271);
