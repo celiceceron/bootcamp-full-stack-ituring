@@ -7,21 +7,32 @@ Caso não tenha encontrado o seriado, retorne undefined.
 
 /*
 const encontraSerie = (listaDeSeriados, buscaDeSerie) => {
-    let posicaoDaBusca = 0;
+    let seriesencontradas = [];
+    let i = 0;
 
-    for (let i = 0; i < listaDeSeriados.length; i++) {
-        if (listaDeSeriados[i].includes(buscaDeSerie)){
-            posicaoDaBusca.push(listaDeSeriados[i])
-        }
-        return posicaoDaBusca
-
-        }
-
-        
+    
+    if (listaDeSeriados.length < 0){
+        console.log("Busca inválida");
+        return undefined;
     }
+    
+
+    while (i < listaDeSeriados.length) {
+        if ((listaDeSeriados[i]).includes(buscaDeSerie)){
+            seriesencontradas.push(listaDeSeriados[i])
+        }
+            i++;
+             
+        }
+        return seriesencontradas
+
+        }
+        
 
 const listaDeSeriados = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"];
-const buscaDeSerie = "Dexter";
+const buscaDeSerie = "Dexter"
+const buscaDeSerie = "Friends";
 
 console.log(encontraSerie(listaDeSeriados, buscaDeSerie));
 */
+
