@@ -5,34 +5,27 @@ retorne a posição que se encontra o seriado.
 Caso não tenha encontrado o seriado, retorne undefined. 
 */
 
-/*
-const encontraSerie = (listaDeSeriados, buscaDeSerie) => {
-    let seriesencontradas = [];
+
+const encontraSeriados = (listaDeSeriados, termoDeBusca) => {
+    let seriadosEncontrados = []; 
     let i = 0;
 
-    
-    if (listaDeSeriados.length < 0){
-        console.log("Busca inválida");
-        return undefined;
-    }
-    
-
     while (i < listaDeSeriados.length) {
-        if ((listaDeSeriados[i]).includes(buscaDeSerie)){
-            seriesencontradas.push(listaDeSeriados[i])
+        if (listaDeSeriados[i].includes(termoDeBusca)){ 
+            seriadosEncontrados.push(listaDeSeriados[i]) 
+            return [i]; 
         }
-            i++;
-             
-        }
-        return seriesencontradas
+            i++; 
 
-        }
+        } if (i != listaDeSeriados.length)
+            return "undefined"
+   
+    }
+
         
+    const listaDeSeriados = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"];
+    const termoDeBusca = "Dexter";
+    /*const termoDeBusca = "Friends";*/
 
-const listaDeSeriados = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"];
-const buscaDeSerie = "Dexter"
-const buscaDeSerie = "Friends";
-
-console.log(encontraSerie(listaDeSeriados, buscaDeSerie));
-*/
+    console.log(encontraSeriados(listaDeSeriados, termoDeBusca));
 
