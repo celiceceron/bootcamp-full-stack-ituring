@@ -12,7 +12,6 @@ const encontraSeriados = (listaDeSeriados, termoDeBusca) => {
 
     while (i < listaDeSeriados.length) {
         if (listaDeSeriados[i].includes(termoDeBusca)){ 
-            seriadosEncontrados.push(listaDeSeriados[i]) 
             return [i]; 
         }
             i++; 
