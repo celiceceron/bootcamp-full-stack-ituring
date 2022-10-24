@@ -24,6 +24,7 @@ Para exibir, utilize o console.log() dentro da função.
     votos: 2
     }
     ];
+    const resultado = 'Brasil é o preferido para ganhar a Copa do Mundo!'
     
     votacaoPaises.sort(function(a, b) {
         if(a.Pais < b.votos) {
@@ -34,17 +35,7 @@ Para exibir, utilize o console.log() dentro da função.
         
     });
 
-    console.log(votacaoPaises);
-
-    /*
-    Brasil: 3 voto(s)
-    Argentina: 2 voto(s)
-    Espanha: 1 voto(s)
-    Portugal: 2 voto(s)
-    
-    Resultado:
-    Brasil é o preferido para ganhar a Copa do Mundo!
-    /*
+    console.log(votacaoPaises, resultado);
 
     // EX:
     /*
