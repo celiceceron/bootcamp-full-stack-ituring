@@ -5,30 +5,23 @@ conta com as seguintes informações no exemplo abaixo.
 Para exibir, utilize o console.log() dentro da função.
 */
 
-/*
-const valores = (num, listaDeValores) => {
+let exibeExtrato = lista => {
+    let saldoFinal = 0
+    let totalDepositos = 0
 
-let contadorInicial = 0;
-let contadorPositivo = 0;
-let contadorNegativo = 0;
-
-
-for (num : listaDeValores)  {
-    console.log(num);
-
-    if (num == 0){
-        contadorInicial++;
-    } else if (num > 0) {
-        contadorPositivo++;
-    } else if (num < 0){
-        contadorNegativo++;
+    for (item of lista) {
+        totalDepositos += item > 0 ? item : 0
+        saldoFinal += item
     }
+    const positivoOuNegativo = saldoFinal > 0 ? "positivo" : "negativo"
 
-
+    console.log(`O valor total depositado foi de: R$ ${totalDepositos}`)
+    console.log(`O valor total retirado foi de: R$ ${totalDepositos - saldoFinal}`)
+    console.log(`O saldo final de sua conta foi ${positivoOuNegativo} no valor de R$ ${Math.abs(saldoFinal)}`)
 }
-const listaDeValores = [100, -20, -30, 10, -7, -21, -5];
 
-console.log(contadorInicial);
-console.log(contadorNegativo);
-console.log(contadorPositivo);
-*/
+/* TESTANDO A SOLUÇÃO */
+let listaDepositosRetiradas = [100, -20, -30, 10, -7, -21, -5]
+exibeExtrato(listaDepositosRetiradas)
+listaDepositosRetiradas = [-100, -20, -30, 10, -7, -21, -5]
+exibeExtrato(listaDepositosRetiradas)

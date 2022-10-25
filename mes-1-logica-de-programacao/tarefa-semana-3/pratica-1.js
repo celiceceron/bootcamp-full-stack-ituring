@@ -4,6 +4,7 @@ argumento de entrada: o número que você
 utilizará para fazer a tabuada.
 */
 
+/*
 const tabuada = (num) => {
     let i = 1;
 
@@ -13,5 +14,15 @@ const tabuada = (num) => {
         i++;
     }
 }
-// INCLUIR O TEXTO TABUADA DE 7 ANTES
+// 
 tabuada(7);
+*/
+
+// EX2: ITURING 
+
+let tabuada = n => {
+    for (let i = 1; i <= 10; i++)
+        console.log(`${i} x ${n} = ${i*n}`)
+}
+
+tabuada(9)

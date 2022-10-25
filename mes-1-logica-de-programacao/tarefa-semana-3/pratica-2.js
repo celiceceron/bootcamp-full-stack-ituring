@@ -5,6 +5,7 @@ Exiba no console todos os números ímpares até chegar
 nesse número.
 */
 
+/*
 const exibaNumerosImpares = (n) => {
     let i = 1;
 
@@ -21,3 +22,13 @@ const exibaNumerosImpares = (n) => {
 }
 
 exibaNumerosImpares(17)
+*/
+
+//EX2: ITURING
+
+let imparesDe1AteN = n => {
+    for (let i = 1; i <= n; i += 2)
+        console.log(i)
+}
+
+imparesDe1AteN(16)
