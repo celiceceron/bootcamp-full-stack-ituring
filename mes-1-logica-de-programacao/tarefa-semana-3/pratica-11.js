@@ -6,7 +6,7 @@ números ordem crescente. Tente escrever um algoritmo de ordenação
 para resolver este problema. 
 */
 
-/*
+
 const listaDeNumeros = [10, 45, 123, 18, 56, 45, 32, 98, 121, 232, 1392824];
 
 const ordemCrescente = listaDeNumeros.sort (function(a, b){
@@ -14,14 +14,3 @@ const ordemCrescente = listaDeNumeros.sort (function(a, b){
 });
 
 console.log(ordemCrescente);
-*/
-
-const listaDeNumeros = [10, 45, 123, 18, 56, 45, 32, 98, 121, 232, 1392824];
-
-const ordenaNumeros = (ordem) => {
-
-    while (i < listaDeNumeros.length) {
-        if (listaDeNumeros.length - )
-        
-    }
-}
