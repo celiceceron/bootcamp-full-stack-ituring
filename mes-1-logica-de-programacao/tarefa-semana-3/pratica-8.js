@@ -5,37 +5,29 @@ conta com as seguintes informações no exemplo abaixo.
 Para exibir, utilize o console.log() dentro da função.
 */
 
+const valores = (num, listaDeValores) => {
 
-    const listaDeEntradasESaidas = [100, -20, -30, 10, -7, -21, -5];
-    const negativos = ([[1] + [2] + [4] + [5] + [6]]);
-    const totalNegativos = 0;
-    
-    const listaDeSaidas = (listaDeEntradasESaidas) => {
-    
-    for (let i = 0; i > listaDeEntradasESaidas.length; i++)
-        return totalNegativos
-      }
-     
-    
+let contadorInicial = 0;
+let contadorPositivo = 0;
+let contadorNegativo = 0;
 
 /*
-const listaDeSaidas = (negativo) => {
-    for();
-    console.log();
-}
-
-const resultadoDoExtrato = (positivoMenosNegativo) => {
-    for();
-    console.log();
-
-}
-
-
-const total = listaDeEntradasESaidas.reduce((acumulador, valorAtual) => {
-    return acumulador + valorAtual}, 0);
-
-console.log(`O saldo final de sua conta foi positivo no valor de R$ ${total}.`);
+for (num ; listaDeValores)  {
+    console.log(num);
 */
 
-console.log(listaDeEntradasESaidas);
+    if (num == 0){
+        contadorInicial++;
+    } else if (num > 0) {
+        contadorPositivo++;
+    } else if (num < 0){
+        contadorNegativo++;
+    }
 
+
+}
+const listaDeValores = [100, -20, -30, 10, -7, -21, -5];
+
+console.log(contadorInicial);
+console.log(contadorNegativo);
+console.log(contadorPositivo);
