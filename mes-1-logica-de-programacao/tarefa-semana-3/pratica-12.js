@@ -11,7 +11,7 @@ function dividirEmGrupos(alunos, tamanho) {
     let novosGrupos = [];
     let i = 0;
 
-    while (i < alunos.length) {
+    while (i < alunos.length - 1) {
         novosGrupos.push(alunos.slice(i, i + tamanho));
         i += tamanho;
 }
