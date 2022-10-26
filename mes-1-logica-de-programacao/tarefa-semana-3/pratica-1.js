@@ -4,6 +4,13 @@ argumento de entrada: o número que você
 utilizará para fazer a tabuada.
 */
 
+let tabuadaDo6 = n => {
+    for (let i = 1; i <= 10; i++)
+    console.log (`${i} x ${n} = ${i * n}`)
+}
+
+tabuadaDo6(6);
+
 /*
 const tabuada = (num) => {
     let i = 1;
@@ -17,12 +24,3 @@ const tabuada = (num) => {
 // 
 tabuada(7);
 */
-
-// EX2: ITURING 
-
-let tabuada = n => {
-    for (let i = 1; i <= 10; i++)
-        console.log(`${i} x ${n} = ${i*n}`)
-}
-
-tabuada(9)

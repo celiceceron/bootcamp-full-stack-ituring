@@ -7,7 +7,6 @@ Caso não tenha encontrado o seriado, retorne undefined.
 
 
 const encontraSeriados = (listaDeSeriados, termoDeBusca) => {
-    let seriadosEncontrados = []; 
     let i = 0;
 
     while (i < listaDeSeriados.length) {
@@ -23,8 +22,8 @@ const encontraSeriados = (listaDeSeriados, termoDeBusca) => {
 
         
     const listaDeSeriados = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"];
-    const termoDeBusca = "Dexter";
-    /*const termoDeBusca = "Friends";*/
+    /*const termoDeBusca = "Dexter";*/
+    const termoDeBusca = "Friends";
 
     console.log(encontraSeriados(listaDeSeriados, termoDeBusca));
 

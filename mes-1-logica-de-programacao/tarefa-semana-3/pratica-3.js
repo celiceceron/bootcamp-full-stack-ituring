@@ -29,17 +29,19 @@ console.log(numeroPrimo(1500450271));
 
 // TENTATIVA 2:
 
+
 function numeroPrimo (n) {
     let i = 2;
 
     while (i < n) {
-        if(n % i === 0) {
+        if (n % i === 0) {
             return false;
         }
         i++;
     }
-        return true;
+    return true;
 }
+
 
 console.log(numeroPrimo(17));
 console.log(numeroPrimo(2));
