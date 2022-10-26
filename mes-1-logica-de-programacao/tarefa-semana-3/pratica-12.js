@@ -48,6 +48,3 @@ let exibeGruposFormadosS4 = (lista, tamGrupo) => {
 let lista = ["Anderson Luz", "Fabio Vechia", "Claudia Lopes", "Rafael Alves", "Maria Mansano", "Jairo Ferreira", "Vitor Ribeiro", "Pedro Abreu", "Gilberto Machado", "Guilherme Rodrigues", "Augusto Roberto"]
 
 exibeGruposFormadosS4(lista, 1)
-exibeGruposFormadosS4(lista, 2)
-exibeGruposFormadosS4(lista, 3)
-exibeGruposFormadosS4(lista, 4)

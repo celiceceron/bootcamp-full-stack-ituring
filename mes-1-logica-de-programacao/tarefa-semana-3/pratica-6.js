@@ -21,7 +21,7 @@ const encontraSeriados = (listaDeSeriados, termoDeBusca) => {
     const listaDeSeriados = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"];
     const termoDeBusca = "Th";
 
-    console.log(encontraSeriados(listaDeSeriados, termoDeBusca));
+    console.table(encontraSeriados(listaDeSeriados, termoDeBusca));
 
 
 // EX2:
