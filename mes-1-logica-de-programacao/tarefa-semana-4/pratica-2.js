@@ -14,9 +14,8 @@ function encontraSerie(series, termodebusca) {
     });
         console.log([indice]);
 }
-
-  
-        
+    
 
 let listaSeries = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"]
 encontraSerie(listaSeries, "Dexter")
+encontraSerie(listaSeries, "Friends")

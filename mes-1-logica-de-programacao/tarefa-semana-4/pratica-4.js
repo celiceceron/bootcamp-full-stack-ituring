@@ -6,11 +6,11 @@ retorne uma lista com a raiz quadrada de cada um dos elementos.
 
 let lista = [4, 9, 16, 25, 36, 49];
 
-let raizQuadradaDaLista = lista.map(function(item){
-    for (let i = 0; i < lista.length; i++){
-    }
-    return Math.sqrt(item);
+function calculoRaizQuadradaDaLista(lista) {
+    let raizQuadradaDaLista = lista.map(function(item){
+        return Math.sqrt(item);
 });
+    return raizQuadradaDaLista;
+}
 
-console.log(raizQuadradaDaLista);
-
+console.log(calculoRaizQuadradaDaLista(lista));
