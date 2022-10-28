@@ -8,10 +8,8 @@ com o índice de cada um na lista.
 let lista = ["Breaking Bad", "Game of Thrones", "Stranger Things", "Chernobyl", "Dexter", "The Last Dance", "This is Us"];
 
 lista.forEach(function(item, indice){
-    for (let [indice, item] of lista.entries()) {
-        console.table(`[${indice}] ${item}`);
-
-    }
+    console.table(`[${indice}] ${item}`)
+    
 })
 
    
