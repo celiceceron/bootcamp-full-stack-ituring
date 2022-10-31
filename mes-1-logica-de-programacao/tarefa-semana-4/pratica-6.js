@@ -5,13 +5,11 @@ do filme o seu tempo de duração.
 */
 
 const exibeFilme = (filme) => {
-    console.table("O filme ");
-    console.table(filme.titulo);
-    console.table("que estreou em ");
-    console.table(filme.anoPublicacao);
-    console.table("tem a avaliação de ");
-    console.table(filme.notaAvaliacao);
-    console.table("pelo IMDb.");
+    let resultado = "O filme " + f.titulo + " que estreou em " +
+    f.anoPublicacao + " tem a avaliação de " + f.notaAvaliacao + 
+    " pelo IMDb.";
+   
+    console.log(resultado);
 };
 
 let f = {
