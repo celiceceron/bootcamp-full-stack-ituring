@@ -4,7 +4,7 @@ e imprima a lista de chaves que ele possui.
 */
 
 
-const exibeinformacoes = (cozinha) => {
+const exibeInformacoes = (cozinha) => {
     console.log(Object.keys(c));
 };
 
@@ -17,8 +17,4 @@ let c = {
 
 };
 
-exibeinformacoes(c);
-
-/*
-console.log(Object.keys(obj)); // console: ['0', '1', '2']
-*/
+exibeInformacoes(c);
