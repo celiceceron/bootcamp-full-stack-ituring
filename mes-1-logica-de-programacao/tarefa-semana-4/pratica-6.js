@@ -13,16 +13,18 @@ const exibeFilme = (titulo, notaAvaliacao, duracao, anoPublicacao, categoria) =>
         f.anoPublicacao = anoPublicacao;
         f.categoria = categoria;
 
-        f.show = function(){
-        console.log(this.titulo);
-        console.log(this.notaAvaliacao);
-        console.log(this.duracao);
-        console.log(this.anoPublicacao);
-        console.table(this.categoria); 
+    f.show = function () {
+            console.table("O filme ");
+            console.table(this.titulo);
+            console.table("que estreou em ");
+            console.table(this.anoPublicacao);
+            console.table("tem a avaliação de ");
+            console.table(this.notaAvaliacao);
+            console.table("pelo IMDb.");
+
         }
 
     return f;
-
 };
 
 let f = exibeFilme("Estrelas Além do Tempo", 7.8, 127, 2016, "Drama");
