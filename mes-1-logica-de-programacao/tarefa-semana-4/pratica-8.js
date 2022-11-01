@@ -6,20 +6,43 @@ de acordo com a saída esperada abaixo.
 
 
 const exibeFilmes = (listaDeFilmes) => {
-    let resultado1 = lista[0].titulo +  ` Nota: ` + lista[0].notaAvaliacao +
-    ` Duração: ` + lista[0].duracao + ` minutos` + ` Ano de publicação: ` + lista[0].anoPublicacao +
-    ` Gênero: biografia, drama e história`;
+    let resultado1 = 
+        lista[0].titulo +  
+        ` (Nota: ` + 
+        lista[0].notaAvaliacao  +
+        ` \n • Duração: ` + 
+        lista[0].duracao + 
+        ` minutos \n` + 
+        ` • Ano de publicação: ` + 
+        lista[0].anoPublicacao  +
+        ` \n • Gênero: biografia, drama e história \n`
 
-    let resultado2 = lista[1].titulo +  ` Nota: ` + lista[1].notaAvaliacao +
-    ` Duração: ` + lista[1].duracao + ` minutos` + ` Ano de publicação: ` + lista[1].anoPublicacao +
-    ` Gênero: biografia, drama e história`;
+    let resultado2 = 
+        lista[1].titulo +  
+        ` (Nota: ` + 
+        lista[1].notaAvaliacao  +
+        ` \n • Duração: ` + 
+        lista[1].duracao + 
+        ` minutos \n` + 
+        ` • Ano de publicação: ` + 
+        lista[1].anoPublicacao  +
+        ` \n • Gênero: biografia, drama e história \n`
 
-    let resultado3 = lista[2].titulo +  ` Nota: ` + lista[2].notaAvaliacao +
-    ` Duração: ` + lista[2].duracao + ` minutos` + ` Ano de publicação: ` + lista[2].anoPublicacao +
-    ` Gênero: biografia, drama e história`;
+    let resultado3 = 
+        lista[2].titulo +  
+        ` (Nota: ` + 
+        lista[2].notaAvaliacao  +
+        ` \n • Duração: ` + 
+        lista[2].duracao + 
+        ` minutos \n` + 
+        ` • Ano de publicação: ` + 
+        lista[2].anoPublicacao  +
+        ` \n • Gênero: biografia, drama e história \n`
 
    console.log(resultado1);
+
    console.log(resultado2);
+
    console.log(resultado3);
 
     
