@@ -6,13 +6,23 @@ de acordo com a saída esperada abaixo.
 
 
 const exibeFilmes = (listaDeFilmes) => {
-    let resultadoFilme1 = lista[0].titulo + "(Nota: " + 7.8 +
-    "* Duração:" + lista[2].duracao +
-   /* "* Ano de publicação: " + lista[3].titulo +
-    "* Gênero: " + lista[4].genero;*/
+    let resultado1 = lista[0].titulo +  ` Nota: ` + lista[0].notaAvaliacao +
+    ` Duração: ` + lista[0].duracao + ` minutos` + ` Ano de publicação: ` + lista[0].anoPublicacao +
+    ` Gênero: biografia, drama e história`;
 
-    console.log(resultadoFilme1)
-     
+    let resultado2 = lista[1].titulo +  ` Nota: ` + lista[1].notaAvaliacao +
+    ` Duração: ` + lista[1].duracao + ` minutos` + ` Ano de publicação: ` + lista[1].anoPublicacao +
+    ` Gênero: biografia, drama e história`;
+
+    let resultado3 = lista[2].titulo +  ` Nota: ` + lista[2].notaAvaliacao +
+    ` Duração: ` + lista[2].duracao + ` minutos` + ` Ano de publicação: ` + lista[2].anoPublicacao +
+    ` Gênero: biografia, drama e história`;
+
+   console.log(resultado1);
+   console.log(resultado2);
+   console.log(resultado3);
+
+    
 };
 let lista = [{
     titulo: "Estrelas Além do Tempo",
@@ -37,6 +47,5 @@ let lista = [{
 }];
 
 exibeFilmes();
-
 
 
