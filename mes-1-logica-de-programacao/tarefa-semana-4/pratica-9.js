@@ -5,7 +5,13 @@ Imprima o item melhor avaliado da lista.
 */
 
 const exibeFilmes = (listaDeFilmes) => {
-}
+    const melhorAvalicao = lista.reduce(function(a, b) {
+        return (a.notaAvaliacao > b.notaAvaliacao) ? a : b
+    })
+        console.log(`O filme de melhor avaliação com nota ${lista[0].notaAvaliacao} é: ${lista[0].titulo}.`);
+
+
+};
 
 let lista = [{
     titulo: "Um Sonho de Liberdade",
@@ -30,3 +36,6 @@ let lista = [{
   }]
 
   exibeFilmes();
+
+
+  
