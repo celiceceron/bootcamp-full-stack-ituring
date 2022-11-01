@@ -4,10 +4,16 @@ como parâmetro. Exiba as informações de cada item da lista
 de acordo com a saída esperada abaixo.
 */
 
-const exibeFilmes = (listaDeFilmes) => {
-    console.log(lista.titulo)
-};
 
+const exibeFilmes = (listaDeFilmes) => {
+    let resultadoFilme1 = lista[0].titulo + "(Nota: " + 7.8 +
+    "* Duração:" + lista[2].duracao +
+   /* "* Ano de publicação: " + lista[3].titulo +
+    "* Gênero: " + lista[4].genero;*/
+
+    console.log(resultadoFilme1)
+     
+};
 let lista = [{
     titulo: "Estrelas Além do Tempo",
     notaAvaliacao: 7.8,
@@ -30,4 +36,7 @@ let lista = [{
     genero: ["Biografia", "Drama", "Suspense", "Guerra"]
 }];
 
-exibeFilmes(lista);
+exibeFilmes();
+
+
+
