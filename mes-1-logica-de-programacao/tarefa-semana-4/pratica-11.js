@@ -6,30 +6,28 @@ mensal de sua conta.
 
 
   let exibeExtratoCompleto = lista => {
-    let saldoFinal = 0;
     let totalDepositos = 0;
     let totalRetiradas = 0;
+    let saldoFinal = 0;
 
 
-    l.forEach(function(item) {
-        
-        totalDepositos += "deposito" ? 1 : 0
-        totalRetiradas += !"deposito" ? 1 : 0
-        totalDepositos += "deposito" ? item.valor : 0
-        saldoFinal += item.valor
 
-    });
+l.forEach(function(item) {
+    if(item.movimentacao === "deposito")
+        totalDepositos += item.valor
+    else if(item.movimentacao === "retirada")
+       saldoFinal -= item.valor
 
-  const positivoOuNegativo = saldoFinal > 0 ? "positivo" : "negatico"
-
+});
+  const positivoOuNegativo = saldoFinal > 0 ? "positivo" : "negativo"
 
   console.log(`O valor total depositado foi de: R$ ${totalDepositos}`)
 
-  console.log(`O valor total retirado foi de: R$ ${totalRetiradas}`)
+  console.log(`O valor total retirado foi de: R$ ${totalDepositos - saldoFinal}`)
 
   console.log(`O saldo final de sua conta foi ${positivoOuNegativo} no valor de R$ ${saldoFinal}`)
 
-}
+  }
 
 let l = [{
     valor: 100.00,
@@ -66,5 +64,6 @@ let l = [{
     movimentacao: "retirada",
     dataMovimentacao: "2022-06-08T09:46:36.611Z"
   }];
+
 
   exibeExtratoCompleto(l);
