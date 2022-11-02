@@ -5,14 +5,19 @@ e exiba o saldo final da conta.
 */
 
 const saldoFinal = (listaDeInformacoes) => {
-        let deposito = 0;
         let resultadoFinal = 0;
-        let valor = lista.valor;
-
-        lista.forEach(deposito += valor > 0 ? valor : 0)
-            resultadoFinal += item
+        lista.forEach(function(item) {
+            if(item.movimentacao === "deposito")
+                resultadoFinal += item.valor;
+            else if (item.movimentacao === "retirada")
+                resultadoFinal -= item.valor;
+        });
         
-    console.log(resultadoFinal);
+        let positivoOuNegativo = "negativo"
+            if(resultadoFinal >= 0)
+                positivoOuNegativo = "positivo"
+
+    console.log(`O saldo final de sua conta foi ${positivoOuNegativo} no valor de R$ ${resultadoFinal}.`);
 
 }
 

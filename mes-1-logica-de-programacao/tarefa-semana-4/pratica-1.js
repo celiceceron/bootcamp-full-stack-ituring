@@ -6,15 +6,9 @@ com o índice de cada um na lista.
 
 
 function ordenaLista(lista) {
-
     lista.forEach((item, indice) => {
-        for(let i = 0; i < lista.length; i++){
             console.table(`[${indice}] ${[item]}`);
-
-        return ordenaLista[i];
-}
-
-});
+})
 
 }
 
