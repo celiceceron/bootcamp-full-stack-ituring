@@ -57,4 +57,4 @@ let lista = [{
     dataMovimentacao: "2022-06-08T09:46:36.611Z"
   }]
 
-  saldoFinal();
+  saldoFinal(lista);
