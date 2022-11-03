@@ -4,8 +4,6 @@ depósitos e retiradas, exiba o resumo do extrato
 mensal de sua conta.
 */
 
-
-
   let exibeExtratoCompleto = lista => {
     let saldoFinal = 0;
     let totalDepositos = 0;
