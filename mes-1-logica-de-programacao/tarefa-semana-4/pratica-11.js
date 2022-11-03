@@ -4,19 +4,7 @@ depósitos e retiradas, exiba o resumo do extrato
 mensal de sua conta.
 */
 
-/*
 
-
-
-    lista.forEach(function(item) {
-    if(item.movimentacao === "deposito")
-        totalDepositos += item.valor
-    else
-        totalDeRetiradas -= item.valor
-    
-    });
-  
-  */
 
   let exibeExtratoCompleto = lista => {
     let saldoFinal = 0;
@@ -40,9 +28,7 @@ mensal de sua conta.
     console.log(`O valor total retirado foi de: R$ ${totalDepositos - saldoFinal}`)
   
     console.log(`O saldo final de sua conta foi ${positivoOuNegativo} no valor de R$ ${saldoFinal}`)
-  
-    
-  
+
    
   };
 
