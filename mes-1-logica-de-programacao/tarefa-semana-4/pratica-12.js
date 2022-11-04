@@ -4,7 +4,7 @@
  do extrato de sua conta.
  */
 
-
+/*
     let exibeExtratoCompleto = lista => {
         let saldoFinal = 0;
         let totalDepositos = 0;
@@ -42,7 +42,46 @@
     
        
       };
+*/
 
+
+let exibeExtratoCompleto = lista => {
+  let contagensIniciais = {
+    saldoFinal: 0,
+    totalDeDepositos: 0,
+    totalDeRetiradas: 0,
+    qtdDeDepositos: 0,
+    qtdDeRetiradas: 0
+  }
+
+  const contagemFinal = lista.reduce(function(acumulador, item){
+    if(item.movimentacao === "deposito") {
+      acumulador.totalDeDepositos += item.valor;
+      acumulador.qtdDeDepositos++;
+    } else if (item.movimentacao === "retirada") {
+      acumulador.totalDeRetiradas += item.valor;
+      acumulador.qtdDeRetiradas++;
+    }
+      return acumulador;
+  },contagensIniciais);
+
+  contagemFinal.saldoFinal = contagemFinal.totalDeDepositos +
+  contagemFinal.totalDeRetiradas;
+
+  let possitivoOuNegativo = contagemFinal.saldoFinal > 0 ? "positivo" :
+  "negativo";
+
+  console.log(`Total de depósitos: ${contagemFinal.qtdDeDepositos}`)
+
+  console.log(`Total de retiradas: ${contagemFinal.qtdDeRetiradas}`)
+
+  console.log(`O valor total depositado foi de: R$ ${contagemFinal.totalDeDepositos}`)
+
+  console.log(`O valor total retirado foi de: R$ ${contagemFinal.totalDeRetiradas}`)
+
+  console.log(`O saldo final de sua conta foi ${contagemFinal.possitivoOuNegativo} no valor de: R$ ${contagemFinal.totalDeDepositos - contagemFinal.totalDeRetiradas}`)
+
+}
 let l = [{
     valor: 100.00,
     movimentacao: "deposito",
