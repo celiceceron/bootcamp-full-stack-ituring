@@ -32,7 +32,9 @@ let l =
     dataCriacao: "2022-06-10T09:46:36.611Z"
   }]
 
-  const buscaDeFotos = (listaFotos, termoDeBusca) => listaFotos.filter((item) => 
+  const buscaDeFotos = (listaFotos, termoDeBusca) => 
+  listaFotos.filter((item) => 
+  
   item.tags.includes(termoDeBusca));
 
   console.log(buscaDeFotos(l, "cachorro"));

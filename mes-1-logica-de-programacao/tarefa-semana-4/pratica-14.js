@@ -4,3 +4,49 @@ de avaliações de um restaurante, calcula a média
 de suas avaliações de acordo com a entrada de cada 
 cliente e exibe a média de avaliação.
 */
+
+let estabelecimento = {
+    restaurante: "Turing Gourmet",
+    tipo: "Comida britânica",
+    avaliacoes: [
+      {
+        cliente: "Thais S.",
+        nota: 9.8
+      },
+      {
+        cliente: "Thales Gonçalves",
+        nota: 8.9
+      },
+      {
+        cliente: "José Lopes",
+        nota: 9.9
+      },
+      {
+        cliente: "Cristina Souza",
+        nota: 9.3
+      },
+      {
+        cliente: "Leo Garcia",
+        nota: 8.5
+      }
+    ]
+  }
+
+  let mediaNota = function(estabelecimento) {
+    let soma = 0;
+    let i = 0;
+
+    estabelecimento.avaliacoes.forEach(function(item){
+        soma += item.nota;
+        i++;
+    })
+
+    media = soma / i;
+    console.log(`A média de avaliações do restaurante Turing Gourmet foi de `) 
+    console.log(media.toFixed(2));
+
+
+  }
+
+ mediaNota(estabelecimento);
+  
