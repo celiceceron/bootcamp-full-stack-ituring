@@ -11,7 +11,8 @@ até o cliente (em minutos).
 
     }); 
 
-    console.log((item.l.motorista[0]))
+
+    console.log(`${lista[0].motorista} está a caminho com o carro ${lista[0].veiculo} de placa ${lista[0].placa}. Chega em ${lista[0].tempoEstimado} minutos.`)
   }
 
 
