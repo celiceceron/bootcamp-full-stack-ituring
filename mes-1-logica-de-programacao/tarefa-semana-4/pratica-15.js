@@ -7,8 +7,8 @@ até o cliente (em minutos).
   const encontraMotorista = (lista) => {
 
     l.sort(function(a, b) {
-    return a.tempoEstimado - b.tempoEstimado -1
-
+        return a.tempoEstimado - b.tempoEstimado -1
+    
     }); 
 
 
