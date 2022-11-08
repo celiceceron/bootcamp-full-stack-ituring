@@ -14,3 +14,18 @@ function calculoRaizQuadradaDaLista(lista) {
 }
 
 console.log(calculoRaizQuadradaDaLista(lista));
+
+/*
+//SOLUÇÃO 1 
+let geradorRaizQuadradaS1 = lista => {
+    return lista.map(Math.sqrt);
+};
+
+//SOLUÇÃO 2 (Resolvendo o desafio) 
+let geradorRaizQuadradaS2 = lista => lista.map(Math.sqrt);
+
+///TESTANDO AS SOLUÇÕES
+const listaNumeros = [4, 9, 16, 25, 36, 49];
+console.log(geradorRaizQuadradaS1(listaNumeros));
+console.log(geradorRaizQuadradaS2(listaNumeros));
+*/
