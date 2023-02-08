@@ -10,7 +10,7 @@ This is the repository of the Ituring Institute of Technology course on programm
 Throughout the course we developed and practiced with 50 different JavaScript codes.
 
 # Technologies and tools I use
-- HTML
+- HTML5
 - JavaScript
 
 # Autor
